@@ -153,25 +153,63 @@ console.log("a<=b =", a<=b);//false
 // }
 
 
-// let message;
-// let login = ""
+let message;
+let login = ""
 
-// if (login == 'Employee') {
-//   message = 'Hello';
-// } else if (login == 'Director') {
-//   message = 'Greetings';
-// } else if (login == '') {
-//   message = 'No login';
-// } else {
-//   message = '';
-// }
+if (login == 'Employee') {
+  message = 'Hello';
+} else if (login == 'Director') {
+  message = 'Greetings';
+} else if (login == '') {
+  message = 'No login';
+} else {
+  message = '';
+}
+
+
+
+let marks;
+let student = "ram";
+
+if(student == "mangesh") {
+    marks = (80 + "%");
+}else if (student === "akshay") {
+    marks = (60 + "%");
+}else if (student === "ram") {
+    marks = (50 + "%");
+}else {
+    marks == (0 + "%");
+};
+
+
+
+console.log(marks);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // console.log(message);
 
+// let iceCreamVanOutside
 
-
-
+// if (iceCreamVanOutside || houseStatus === "on fire") {
+//     console.log("You should leave the house quickly.");
+//   } else {
+//     console.log("Probably should just stay in then.");
+//   }
+  
 
 
 
