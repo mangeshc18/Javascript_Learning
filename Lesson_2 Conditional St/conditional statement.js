@@ -190,7 +190,20 @@ console.log(marks);
 
 
 
+let Greetings;
+let hour = 24;
 
+if(hour < 18) {
+    Greetings = "its Good Day";
+}else if (hour < 18) {
+    Greetings = "its Not Good Day";
+}else if (hour = 18) {
+    Greetings = "its Not Bad Day"
+}else if(hour >= 23){
+    Greetings = "see You Tommorrow";
+}
+
+console.log(Greetings);
 
 
 
