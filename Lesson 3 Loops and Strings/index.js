@@ -232,15 +232,84 @@ while(userNum != gameNum){
 console.log("congratulations, you entered right number");
 */
 
+//strings and its types and methods
+
+
+// let fName = "mangesh";
+// console.log(fName[0]);
+
+//position starts from 0
+
+//we also call it index
+
+
+//template literals
+
+// let upperCase = fName.toUpperCase()
+// console.log(upperCase);
+
+// let lowerCase = fName.toLowerCase()
+// console.log(lowerCase);
+
+// Automatic replacing of variables with real values is called string interpolation
+
+
+// let text = "We are the                 so-called \"Vikings\" from the north.";
+
+// console.log(text);
+
+// let text1= 'It\'s alright.';
+
+
+
+// slice() extracts a part of a string and returns the extracted part in a new string.
+
+// The method takes 2 parameters: start position, and end position (end not included).
+
+let cars = "bmw , audi, ferrari";
+
+let newCars = cars.slice(2, 13)
+console.log(newCars);
+
+let fName = "mangesh";
+let lName = "choudhari"
+
+// console.log(fName.slice(0, 7));
+// console.log(`full name of student is ${fName} ${lName}`);
+// let fullName = `full name of student is ${fName} ${lName}`;
+let fullName = fName.replace("m", "b");
+console.log(fullName);
+
+// let text = "Apple, Banana, Kiwi";
+// let part = text.slice(-8);
+
+// console.log(part);
 
 
 
 
+let str = "Apple, Banana, Kiwi";
+let part = str.substring(7, 13);
+
+
+console.log(part);
+
+// The replace() method does not change the string it is called on.
+
+// The replace() method returns a new string.
+
+// The replace() method replaces only the first match
+
+// If you want to replace all matches, use a regular expression with the /g flag set. See examples below.
 
 
 
+let text1 = "      Hello World!      ";
+// let text2 = text1.trim();
+// let text2 = text1.trimEnd();
+let text2 = text1.trimStart()
 
-
+console.log(text2);
 
 
 
