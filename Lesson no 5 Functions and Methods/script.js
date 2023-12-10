@@ -17,9 +17,11 @@ console.log(fName.slice(0,2));//this is called functions methods
 //a block of code that performs a specific task and can be invoked at any time.
 
 //function definition
+/*
 function name(params) {
   //do some code
 }
+*/
 
 //function call or invoked
 // function name()
@@ -115,7 +117,7 @@ function countWovels(str) {
 // console.log(countWovels("mangesh choudhari i live in ahmednagar"));
 
 //lets create an arrow function 
-
+/*
 
 const countWovel = (str) => {
     count = 0;
@@ -189,7 +191,7 @@ function sum(num,value, ...para) {//rest parameter must be last formal parameter
 sum(1,2,3,4,5,7,8,9)
 
 //default parameters
-
+/*
 //lets calculate the intrest on principle amt of rs 1000 for five years
 function intrest(p,r=6,y=5) {
     console.log(`principle amt ${p} and intrest of ${r} % will be`);
@@ -201,17 +203,19 @@ function intrest(p,r=6,y=5) {
 console.log(intrest(1000));
 console.log(intrest(2000));
 console.log(intrest(1500));
-
+*/
 //scope
-
+/*
 {
   var a = 5;
 }
 console.log(a);
-
+*/
 //let vs var
 
-//var is a global scope variable and let and const is block scoped variables
+//var is a global scope variable and let and const is block scoped variables\\
+
+/*
 
 const ab = 5;
 
@@ -223,31 +227,235 @@ function a () {
 function b () {
     const ab = 5;
 } 
+
+*/
 //in this case const is a block scoped variable thats why it dosent throw error
 
 
 
+// Declared functions are not executed immediately. They are "saved for later use", and will be executed later, when they are invoked (called upon).
+
+
+
+/*
+
+Self-Invoking Functions
+Function expressions can be made "self-invoking".
+
+A self-invoking expression is invoked (started) automatically, without being called.
+
+Function expressions will execute automatically if the expression is followed by ().
+
+You cannot self-invoke a function declaration.
+
+You have to add parentheses around the function to indicate that it is a function expression:
+
+// Example
+
+
+(function () {
+  let x = "Hello!!";  // I will invoke myself
+})();
 
 
 
 
 
 
+*/
+/*
+
+function myFunction(a, b) {
+    return a * b;
+  }
+  
+  let x = myFunction(4, 3) * 2;
+  console.log(x);
 
 
 
 
+  let arg = function myFunction(a, b) {
+    return arguments.length;
+  }
+
+console.log(arg.length);
+
+*/
+
+// tostring method returns function method to string 
+/*
+function myFunction(a, b) {
+    return a * b;
+  }
+  
+  let text = myFunction.toString("mn");
+  console.log(text);
+
+
+  Arrow Functions
+  Arrow functions allows a short syntax for writing function expressions.
+  
+  You don't need the function keyword, the return keyword, and the curly brackets.
+
+*/
+
+/*
+
+// ES5
+var x = function(x, y) {
+    return x * y;
+  }
+
+  console.log(x(3,3));
+  
+  // ES6
+  const y = (x, y) => x * y;
+
+  console.log(y(2,2)-3);
+
+*/
+
+// Function Parameters and Arguments
+// Earlier in this tutorial, you learned that functions can have parameters
+
+
+// function functionName(parameter1, parameter2, parameter3) {
+//     // code to be executed
+//   }
 
 
 
+// Parameter Rules
+// JavaScript function definitions do not specify data types for parameters.
+
+// JavaScript functions do not perform type checking on the passed arguments.
+
+// JavaScript functions do not check the number of arguments received.
+
+/*
+function myFunction(a, b=10) {
+    return a+b;
+}
+
+console.log(myFunction(4));
 
 
+const sum = (...arg) => {
+    let total = 0;
+    for (const val of arg) {
+        total += val;
+    }
+    return total;
+}
+
+console.log(sum(2,3,4,5,6,7,12,44,34));
+*/
+
+/*
+x = sumAll(1, 123, 500, 115, 44, 88);
+console.log(x);
 
 
+function sumAll() {
+  let sum = 0;
+  for (let i = 0; i < arguments.length; i++) {
+    sum += arguments[i];
+  }
+  return sum;
+}
+ 
+*/
+
+// Note
+// this is not a variable. It is a keyword. You cannot change the value of this.
 
 
+// Invoking a Function as a Method
+
+/*
+const myName = {
+    fName: "mangesh",
+    lName: "choudhari",
+    fullName: function () {
+        return `my full name is ${this.fName} ${this.lName}`;
+    }
+}
+
+console.log(myName.fName, myName.lName);
 
 
+*/
+
+/*
+
+const myObject = {
+    firstName:"John",
+    lastName: "Doe",
+    fullName: function () {
+      return this;
+    }
+  }
+
+  */
+  
+  // This will return [object Object] (the owner object)
+  
+//   console.log(myObject.fullName());
+
+//   In the example above, this refers to the person object.
+
+//   this.firstName means the firstName property of this.
+  
+//   Same as:
+  
+//   this.firstName means the firstName property of person.
+
+
+// call the function
+
+/*
+const person = {
+    myFunction: function() {
+        return this.firstName + " " + this.lastName;
+    }
+}
+
+const person1 = {
+    firstName: "mangesh",
+    lastName: "choudhari"
+
+};
+
+const person2 = {
+    firstName: "akshay",
+    lastName: "parkad"
+
+};
+
+const person3 = {
+    firstName: "gaurav",
+    lastName: "sudake"
+
+};
+
+console.log(person.myFunction.call(person3)
+);
+*/
+
+
+// const person {
+//     fullName: functiond(a,b) {
+//         return `${this.fName} ${this.lName} ${a} and ${b} `
+//     }
+// };
+
+// const person1 = {
+//     fName: "mangesh",
+//     lName: "choudhari"
+// }
+
+// person.fullName.call(person1, ahmed)
 
 
 
